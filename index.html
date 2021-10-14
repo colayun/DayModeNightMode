@@ -9,6 +9,14 @@
     <body>
         <h1>Day Mode & Night Mode Button</h1>
         
+        <!--start link color-->
+        <script>
+
+            
+        </script>
+        <!--end link color-->
+
+        <!--start button javascript-->
         <input type="button" value="night" onclick="
         
         var bodySelector = document.querySelector('body');
@@ -17,12 +25,43 @@
         bodySelector.style.backgroundColor = 'black';
         bodySelector.style.color = 'powderblue';
         this.value = 'day';
+
         } else {
         bodySelector.style.backgroundColor = 'powderblue';
         bodySelector.style.color = 'black';
         this.value = 'night';    
         }
         ">
+        <!--end button javascript-->
+
+        <!--start displayed on body via javascript-->
+        <ol>
+            <script>
+                document.write(cities[i]);
+            </script>
+        </ol>
+        <!--end displayed on body via javascript-->
+
+        <!--start background color declaration-->
+        <script>
+            document.querySelector('body').style.backgroundColor = 'powderblue';
+        </script>
+        <!--end background color declaration-->
+
+        <!--start loop-->
+        <script>
+            var cities = ["paris", "london", "milano", "moscow", "phoenix", "toronto", "seattle", "tokyo"];
+            var i = 0;
+            while ( i < cities.length ) {
+                document.write ( '<li><a href = "https://www.google.com/search?q=' + cities[i] + '&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj78Ymv68jzAhXAzTgGHfz8AJ8Q_AUoAXoECAEQAw&biw=1663&bih=805&dpr=1.93">' + cities[i] + '</a></li>' );
+                i = i + 1;            
+            }
+        </script>
+        <!--end loop-->
     </body>
     
 </html>
+
+
+
+<!--london-->
